@@ -29,6 +29,10 @@ class Transfer
       receiver.deposit(amount * -1)
       sender.deposit(amount)
       self.status = 'reversed'
+    else
+      self.status = "rejected"
+      "Transaction rejected. Please check your account balance."
+    end
   end
 
 end
