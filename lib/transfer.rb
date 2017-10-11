@@ -16,6 +16,7 @@ class Transfer
   def execute_transaction
     @receiver.deposit(amount * -1)
     @sender.deposit(amount)
+    @status = 'complete'
   end
 
 end
