@@ -7,5 +7,5 @@ class Transfer
     @receiver = receiver
     @amount = amount
   end
-  
+
 end
